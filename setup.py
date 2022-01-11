@@ -19,19 +19,8 @@ EMAIL = '85Bytes@gmail.com'
 AUTHOR = 'L.George'
 REQUIRES_PYTHON = '>=3.6.0'
 VERSION = '0.1.0'
-
-# What packages are required for this module to be executed?
-REQUIRED = ['gitpython','boto3',
-    # 'requests', 'maya', 'records',
-]
-
-# What packages are optional?
-EXTRAS = {
-    # 'fancy feature': ['django'],
-}
-
-
-
+REQUIRED = ['GitPython','boto3']
+EXTRAS = {}
 # Where the magic happens:
 setup(
     name=NAME,
@@ -44,12 +33,6 @@ setup(
     python_requires=REQUIRES_PYTHON,
     url=URL,
     packages=find_packages(exclude=["tests", "*.tests", "*.tests.*", "tests.*"]),
-    # If your package is a single module, use this instead of 'packages':
-    # py_modules=['mypackage'],
-
-    # entry_points={
-    #     'console_scripts': ['mycli=mymodule:cli'],
-    # },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
     include_package_data=True,
@@ -65,7 +48,7 @@ setup(
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
     # $ setup.py publish support.
-    cmdclass={
-        'upload': UploadCommand,
-    },
+    # cmdclass={
+    #    'upload': UploadCommand,
+    #},
 )
