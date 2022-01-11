@@ -15,7 +15,7 @@ import git
 
 timestr =time.strftime("%m%d%Y")
 currentDir = "./"
-clockexe = ("./bin/cloc-1.90.exe")
+clockexe = ("./bin/cloc-1.92.exe")
 repourl = input("Please enter repository address: ")           
 #"https://github.com/navdeep-G/setup.py.git" # input("Please enter the address for the repositories:") 
 
