@@ -5,8 +5,6 @@
 #   $ pipenv install twine --dev
 
 import io
-import os
-import sys
 from shutil import rmtree
 
 from setuptools import Command, find_packages, setup
@@ -19,7 +17,7 @@ EMAIL = '85Bytes@gmail.com'
 AUTHOR = 'L.George'
 REQUIRES_PYTHON = '>=3.9.0'
 VERSION = '1.0.0'
-REQUIRED = ['GitPython','boto3']
+REQUIRED = ['GitPython']
 EXTRAS = {}
 # Where the magic happens:
 setup(
