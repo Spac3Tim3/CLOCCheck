@@ -9,16 +9,16 @@ import os
 import sys
 from shutil import rmtree
 
-from setuptools import find_packages, setup, Command
+from setuptools import Command, find_packages, setup
 
 # Package meta-data.
-NAME = 'CLOCCheck'
+NAME = 'ClockCheck'
 DESCRIPTION = 'My short description for my project.'
 URL = 'https://github.com/Spac3Tim3/CLOCCheck/'
 EMAIL = '85Bytes@gmail.com'
 AUTHOR = 'L.George'
-REQUIRES_PYTHON = '>=3.6.0'
-VERSION = '0.1.0'
+REQUIRES_PYTHON = '>=3.9.0'
+VERSION = '1.0.0'
 REQUIRED = ['GitPython','boto3']
 EXTRAS = {}
 # Where the magic happens:
@@ -26,8 +26,6 @@ setup(
     name=NAME,
     version=about['__version__'],
     description=DESCRIPTION,
-    long_description=long_description,
-    long_description_content_type='text/markdown',
     author=AUTHOR,
     author_email=EMAIL,
     python_requires=REQUIRES_PYTHON,
@@ -38,17 +36,8 @@ setup(
     include_package_data=True,
     license='MIT',
     classifiers=[
-        # Trove classifiers
-        # Full list: https://pypi.python.org/pypi?%3Aaction=list_classifiers
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: Implementation :: CPython',
         'Programming Language :: Python :: Implementation :: PyPy'
     ],
-    # $ setup.py publish support.
-    # cmdclass={
-    #    'upload': UploadCommand,
-    #},
 )

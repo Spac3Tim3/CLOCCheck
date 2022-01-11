@@ -15,7 +15,7 @@ import git
 
 timestr =time.strftime("%m%d%Y")
 currentDir = "./"
-clockexe = ("./bin/cloc-1.92.exe")
+clockexe = ("cloc-1.92.exe")
 repourl = input("Please enter repository address: ")           
 #"https://github.com/navdeep-G/setup.py.git" # input("Please enter the address for the repositories:") 
 
@@ -45,7 +45,7 @@ def clonerepo():
                 print( "Unable to pull repository, please try again")
                 sys.exit()
 
-
+#https://stackoverflow.com/questions/47179167/open-an-exe-file-and-give-it-input-parameters-in-python
         print("Generating clock report ...." + reponame)
         proc = subprocess.Popen([clockexe,currentDir+reponame,"--csv","--out" , clockoutput, "--quiet"],stdout=subprocess.PIPE)
         proc.stdout.read()
@@ -106,7 +106,7 @@ reponame = repoURLpull()
 clockoutput = timestr+"-"+reponame+ ".csv"
 
 clonerepo()
-
+    
 print("Press 1 to send email with AWS.")
 print("Press 2 to send email with Gmail")
 value = input('1.AWS  2.Gmail:  ')
