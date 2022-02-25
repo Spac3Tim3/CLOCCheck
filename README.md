@@ -42,7 +42,7 @@ Navigate to download location
 
 ## Meta
 
-L.George – [@YourTwitter](https://twitter.com/dbader_org) – 
+L.George –– 
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
